@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# displays the content of the current working directory.
+# Script lists content in current directory without initial #- in filenames
 
-for i in *
+files="$(ls)"
+for f in $files;
 do
-    echo "$i" | cut -d'-' -f2
+    echo "$f" | cut -d "-" -f2
 done
