@@ -1,6 +1,6 @@
 # SSH client configuration to use the private key ~/.ssh/holberton
 # SSH client configuration to refuse to authenticate using a password
 
-Host 3.239.72.105
+Host 52.201.155.147
      PasswordAuthentication no
      IdentityFile ~/.ssh/school
