@@ -13,9 +13,9 @@ def information():
     for user in users.json():
         if user.get('id') == int(argv[1]):
             EMPLOYEE_NAME = (user.get('name'))
-            break
-    NUMBER_OF_DONE_TASKS = 0
+            break:
     TOTAL_NUMBER_OF_TASKS = 0
+    NUMBER_OF_DONE_TASKS = 0
     TASK_TITLE = []
     todos = requests.get("http://jsonplaceholder.typicode.com/todos")
     for todo in todos.json():
